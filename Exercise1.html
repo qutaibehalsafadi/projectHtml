@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <title>
+       SIGN IN TAHALUF     
+        </title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body{
+                  animation-name: BODYS;
+                   animation-duration: 10s; animation-iteration-count: infinite;  }
+                   @keyframes BODYS {
+                   0% {background-image:url("background_tahaluf.png"); left:0px; top:0px;width: 100%;} 
+                   25% {background-image:url("background_tahaluf1.jpg"); left:200px; top:0px;width: 100%;} 
+                   50% {background-image:url("background_tahaluf2.jpg"); top:200px;width: 100%;} 
+                   75% {background-image:url("background_tahaluf.png"); left:0px; top:200px;}
+                    100% {background-image:url("background_tahaluf1.jpg"); left:0px; top:0px;}
+                 }
+                 a{
+                    text-decoration:none;
+                 }
+                    header{
+                       /* background-image:url("./logo_tahaluf.png");*/
+                       width: 100%;
+                    height: 150px;
+                    border: 5px none gray;
+                    border-radius: 50px;
+                    box-shadow: 5px 3.5px rgb(137, 247, 137);
+                       animation-name: header1;
+                   animation-duration: 5s; animation-iteration-count: infinite; 
+                    } 
+                    header nav {
+                    width: 100%;
+                    height: 150px;
+                    text-align: center;
+                    /*background-image:url("./logo_tahaluf.png");*/
+                   
+                    }
+                    @keyframes header1 {
+                        from{font-size: medium;  }
+                        to{font-size: xx-large;text-shadow: 2px 2px gray; box-shadow: 5px 5px gray; }
+                   0% {background-image:url("./logo_tahaluf.png"); left:0px; top:0px;width: 100%; } 
+                   25% {background-image:url("./background_tahaluf2.jpg"); left:200px; top:0px;width: 100%;} 
+                   50% {background-image:url("./background_tahaluf2.jpg"); top:200px;width: 100%;} 
+                   75% {background-image:url("./logo_tahaluf.png"); left:0px; top:200px;width:100%;}
+                    100% {background-image:url("./logo_tahaluf.png"); left:0px; top:0px;width:  100%;}
+                  
+                 }
+                 #main_list{
+                    text-align: center;
+                    padding-top: 50px;
+                 }
+                 #main_list li{
+                     font-size: 50px;
+                     
+                     color: rgb(52, 59, 45);
+                     font-display:initial;
+                     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                     box-sizing: 100px;
+                     box-shadow: rgb(180, 143, 143) 50px;
+                     list-style-type: none;
+                     display:inline;
+                     letter-spacing: 5px;
+                     padding: 15px;
+                     text-underline-position: above;
+                    margin:20%,0,20%,0;
+                    border: 2px solid rgb(92, 89, 89);
+                    border-radius: 50px;
+                    text-align: center;
+                 }
+                 #main_list li:hover{
+                     color: rgb(240, 236, 227);
+                    background-image: url("./backgrounds_main_list.jpg");
+                     
+                 }
+                
+                 #main_list li:active{
+                    background-color: rgb(31, 133, 40);
+                     color: rgb(248, 240, 240);
+                 }
+                 #main_list #sign_in{
+                         float: right;
+                          font-size: 35px;
+                 }
+                 #section1{
+                     
+                    background-image: url("./background_tahaluf2.jpg");
+                    border: 1px none rgb(172, 117, 117);
+                    width: 80%;
+                    height: auto;
+                    text-shadow: brown 20px;
+                    border-radius: 50px;
+                    box-shadow: 7px 7px rgb(100, 98, 98);
+                    animation-name: section_anmi;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                 }
+                 @keyframes section_anmi{
+                    0% {background-image:url("./background_form1.jpg"); left:0px; top:0px;width: 100%;} 
+                   25% {background-image:url("./background_form2.jpg"); left:200px; top:0px;width: 100%;} 
+                   50% {background-image:url("./background_form3.jpg"); top:200px;width: 100%;} 
+                   75% {background-image:url("./background_form4.jpg"); left:0px; top:200px;width: 100%;}
+                    100% {background-image:url("./background_form5.jpg"); left:0px; top:0px;width: 100%;}
+                 }
+                 #div_form{display:none;
+                background-image: url("./background_tahaluf2.jpg");
+                color:white;
+    text-shadow:1px 1.5px black;
+                }
+               
+                #div_form form caption{
+                    
+                    margin-left: 50px;
+                    width:95%;
+                    border: 3px none rgb(180, 162, 162);
+                    text-align: center;
+                    font-size: xx-large;
+                    background-color: rgb(233, 218, 218);
+                    animation-name: header1;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+border-radius: 50px;
+                }
+                #div_form form label{
+                    text-align: left;
+                    font-size: x-large;
+                    box-sizing: 200px;
+                    text-shadow: brown 20px;
+                }
+                #form_SignIn input{
+                    border: 3px solid rgb(114, 94, 94);
+                    box-shadow: 5px 5px black;
+                    width: 200px;
+                    height: 35px;
+                    box-decoration-break: clone;
+                    box-sizing: 200px;
+                    border-radius: 20px;
+                    text-align: center;
+                    text-shadow: brown;
+                    text-decoration: brown;
+                    font-size: large;
+                }
+                #div_from table tr{
+                    padding: 15px;
+                    text-align: left;
+                    border: 5px solid black;
+                }
+                input[type=submit]{
+  background: rgb(81, 235, 81);
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+ 
+  position: relative;
+	display: inline-block;
+  cursor: pointer;
+	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+  animation-name: bottom_anmi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes bottom_anmi{
+    from{font-size: medium;behavior: inherit;background-color: white;width: 75px;height: 25px; color: black;}
+    to{font-size: xx-large;background-color: green;text-shadow: 2xp 2xp darkgrey;
+    width: 200px;height: 50px;color: honeydew;}
+}
+#form_SignIn input:hover{
+    background-color: rgb(49, 42, 42);
+                     color: rgb(1, 0, 12);
+                     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#button {
+    border: 5px none black;
+    box-shadow:2px 2px rgb(156, 154, 152);
+    border-radius: 50px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    color:white;
+    text-shadow:1px 1.5px black;
+    text-decoration: none;
+   
+}
+ #div_Exam{
+                    display: none;
+                }
+#wep_devloper{
+    display:inline-table;
+    margin: 50px;
+    border: 5px solid rgb(73, 121, 87);
+    border-radius: 50px;
+    width: 200px;
+    height: 300px ;
+    font-size: auto;
+    
+    text-align: center;
+    text-shadow: 1px 1px rgb(211, 208, 208);
+    text-transform: capitalize;
+    text-decoration-color: brown;
+}
+#leftToRight{
+    width: 300px;
+    height: 100px;
+    border: 5px none black;
+    border-radius: 50px;
+    box-shadow: 5px 3px rgb(201, 196, 196);
+  animation-name: run ;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}   
+
+@keyframes run {
+   /* 35%{margin-left: 30%;}*/
+  0% { margin-left: -98%;}
+  100%{ margin-left: 300%;}
+}
+footer{
+    margin-top: 100%;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 100px;
+}
+    </style>
+  <script>
+function sign_in(){
+    document.getElementById("div_Exam").style.display = 'none';
+    document.getElementById("div_form").style.display = 'inline';
+  
+   }
+   function EXAM(){
+    document.getElementById("div_form").style.display = 'none';
+    document.getElementById("div_Exam").style.display = 'inline';
+   }
+  </script>
+    <body  class=""> 
+         <header >
+            
+            <nav id="NAVBAR" style="display:inline;">
+                
+            <ul id="main_list">
+                <li><a rel="HOME" href="./Exercise1.html" onclick="HOME()" style="color: rgb(39, 33, 33);">HOME</a></li>
+                <li ><a rel="ABOUT" href="./Exercise1.html" onclick="ABOUT()" style="color: rgb(43, 27, 27);"> ABOUT</a></li>
+                <li><a rel="CONTACT" href="./Exercise1.html" onclick="CONTACT()" style="color: rgb(43, 27, 27);" > CONTACT</a></li>
+                <li><a rel="div_Exam" href="#" onclick="EXAM()" style="color: rgb(43, 27, 27);" > EXAMS</a></li>
+
+                <li id="sign_in"><a rel="div_form" href="#" onclick="sign_in()" style="color: rgb(7, 63, 3); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">SIGN_IN</a></li>
+                
+                        </ul>
+    </nav></header>
+<section id="section1">
+    <div   id="div_form" name="div_form" >
+        <form method="post" action="./task1.html" id="form_SignIn">
+<table>
+    <caption>Join To Tahaluf  For Free</caption>
+        <tr>  <th><label for="first_name">First Name :</label></th> 
+            <th><input type="text" name="first_name" required placeholder="enter first name"></th>
+</tr> 
+<tr>  <th><label for="Last_name" >Last Name :</label></th> 
+    <th><input type="text" name="Last_name"  required placeholder="enter last name"></th>
+</tr> 
+<tr>  <th><label for="PHONE">Phone Number :</label></th> 
+    <th><input type="number" name="PHONE" required placeholder="00962-79-000-0000"></th>
+</tr> 
+<tr>  <th><label for="email">Email :</label></th> 
+    <th><input type="email" name="email" placeholder="example@gmail.com" ></th>
+</tr> 
+<tr>  <th><label for="certificates">Certificates :</label></th> 
+    <th><input type="file" name="certificates" required ></th>
+    <th><label for="from_date">from Date</label><input type="date" name="from_date" required>
+        <label fro="to_date"> To Date:</label><input type="date" name="to_date" required> </th>
+</tr> 
+<tr>  <th><label for="PERSONAL_PIC">Personal Picther :</label></th> 
+    <th><input type="file" name="PERSONAL_PIC" accept="image/png, image/jpeg,image/jpg" required></th>
+</tr>
+<tr>  <th><label for="CV">CV  :<em style="font-size: 14px;">just pdf</em></label></th> 
+    <th><input type="file" name="CV" required accept="application/pdf,application/vnd.ms-excel" /> ></th>
+</tr>
+<tr>
+   <th></th>
+   <th></th> 
+    <th><input type="submit" value="SEND" name="submit" required></th></tr>
+</table>
+    </form></div>
+    <div id="div_Exam" name="div_Exam">
+        <div id="wep_devloper"><h1><a href="./exam.html" id="button"  >Wep Developer</h1>
+            <em>Web development is the work involved in developing a Web site for the Internet</em><br>
+        <img src="./wep developer.png" alt="wep developer"style="width: 70px; height: 70px;">
+        </div>
+        <div id="wep_devloper"><h1><a href="./exam.html" id="button" " >HTML/CSS/JS</h1>
+            <em>HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. CSS is used to control presentation,
+                 formatting, and layout. JavaScript is used to control the behavior of different elements.</em><br>
+        <img src="./html.png" alt="wep developer" style="width: 70px; height: 70px;">
+            </div>
+        <div id="wep_devloper"><h1><a href="./exam.html" id="button"  >C_Sharp(C#)</h1>
+            <em>C# is an object-oriented, component-oriented programming language.</em><br>
+        <img src="./Csharp.jpg" alt="Csharp" style="width: 70px; height: 70px;">
+        </div>
+        <div id="wep_devloper"><h1><a href="./exam.html" id="button"  >ORACLE Developer</h1>
+            <em>An Oracle database is a collection of data treated as a unit.</em><br>
+        <img src="./oracle.jpg" alt="oracle" style="width: 70px; height: 70px;">
+        </div>
+        <div id="wep_devloper"><h1><a href="./exam.html" id="button"  >EXCEL</h1>
+            <em>Allows users to organize, format and calculate data with formulas using a spreadsheet system</em><br>
+        <img src="./excel.png" alt="oracle" style="width: 70px; height: 70px;">
+        </div>
+    </div>
+</section>
+<footer ><img src="background_tahaluf.png" id="leftToRight" ></footer>
+
+    </body>
+</html>
